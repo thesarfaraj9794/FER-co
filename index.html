@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FER Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0e8;
+      
+    }
+
+    .hero {
+      background: url('images/img3.jpg') no-repeat center center/cover;
+      color: rgb(79, 223, 91);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .shining-text {
+      background: linear-gradient(90deg, #fff, #ffeb3b, #fff);
+      background-size: 200% auto;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 2s linear infinite;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .product-img,
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #0d0d0e, #203a43, #2c5364);
+      color: rgb(177, 170, 170);
+    }
+
+    .nav-link {
+      color: rgb(255, 255, 255) !important;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .details {
+      background-color: #dce7f3;
+      border-left: 4px solid #0d6efd;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    .stats {
+      font-weight: bold;
+      color: #97f3b3;
+      background-color: #e6ffe6;
+      padding: 10px;
+      border-left: 5px solid #198754;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .achiever-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .achiever-marquee {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    .achiever-card {
+      flex: 0 0 auto;
+      width: 200px;
+      margin-right: 50px;
+    }
+
+    .achiever-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid #85adf7;
+      box-shadow: 0 0 8px rgba(250, 44, 216, 0.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 30px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 12px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+    }
+
+    .equal-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand"   href="images/logo1.png">FER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m.s-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Level</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Achievers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="shining-text">Welcome To  FER Company</h1>
+      <p>High-quality wellness and health products</p>
+    </div>
+  </section>
+
+  <section class="section bg-light" id="about">
+    <div class="container">
+      <h2 class="text-center mb-4">About  FER Company</h2>
+      <p>This Company is dedicated to providing natural health and wellness products across the globe. Our mission is to empower individuals with high-quality solutions that promote a healthy lifestyle. Since our inception, we’ve built a community of millions who trust in our values, our products, and our purpose. Whether you're beginning your wellness journey or ready to grow as a leader, FER is with you every step of the way.</p>
+      <img src="images/im4.png" class="img-fluid rounded mt-4" style="width: 100%; height: 300px; object-fit: cover;" alt="About Forever Company">
+    </div>
+  </section>
+
+<section class="section bg-light" id="products">
+  <div class="container">
+    <h2 class="text-center mb-5">Level of Company</h2>
+    <div class="row g-4">
+      <!-- 2CC Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-start border-success border-4">
+          <img src="images/image1.png" class="card-img-top product-img" alt="2CC">
+          <div class="card-body">
+            <h5 class="card-title text-success"><i class="bi bi-check-circle-fill me-2"></i>2CC Level</h5>
+            <p class="card-text">2CC is the first milestone in our company, representing commitment and the beginning of your wellness journey.</p>
+            <p class="stats">✅ 10,000+ users successfully completed 2CC.</p>
+            <a href="2cc-details.html" class="btn btn-outline-success mt-2">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4CC Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-start border-primary border-4">
+          <img src="images/img.png" class="card-img-top product-img" alt="4CC">
+          <div class="card-body">
+            <h5 class="card-title text-primary"><i class="bi bi-bar-chart-fill me-2"></i>4CC Level</h5>
+            <p class="card-text">4CC signifies a growing commitment with access to advanced wellness products and company activities.</p>
+            <p class="stats">📈 7,500+ members achieved 4CC successfully.</p>
+            <a href="4cc-details.html" class="btn btn-outline-primary mt-2">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6CC Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-start border-warning border-4">
+          <img src="images/img2.jpg" class="card-img-top product-img" alt="6CC">
+          <div class="card-body">
+            <h5 class="card-title text-warning"><i class="bi bi-award-fill me-2"></i>6CC Level</h5>
+            <p class="card-text">6CC is a leadership-level achievement that qualifies you for rewards and recognition. manager of the company</p>
+            <p class="stats">🏆 2,000+ leaders proudly reached 6CC.</p>
+            <a href="6cc-details.html" class="btn btn-outline-warning mt-2">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--bs yahi tk hai isko change bhi nkr sakte h upper iske iska main code hai-->
+
+
+
+
+  
+<section class="section" id="gallery">
+  <div class="container">
+    <h2 class="text-center mb-4">Achievers</h2>
+    <div class="achiever-marquee">
+      <div class="marquee-track">
+        <!-- Achiever Card 1 -->
+        <div class="achiever-card text-center">
+          <img src="images/image.png" alt="Ravi" class="achiever-img">
+          <p><strong>Ravi Kumar</strong><br>Rohan<br>UP</p>
+        </div>
+        <!-- Achiever Card 2 -->
+        <div class="achiever-card text-center">
+          <img src="images/im2.png" alt="Neha" class="achiever-img">
+          <p><strong>Neha Sharma</strong><br>4CC Achiever<br>Mumbai</p>
+        </div>
+        <!-- Achiever Card 3 -->
+        <div class="achiever-card text-center">
+          <img src="images/im1.png" alt="Amit" class="achiever-img">
+          <p><strong>Rupak </strong><br>6CC Achiever<br>Jaipur</p>
+        </div>
+        <!-- Achiever Card 4 -->
+        <div class="achiever-card text-center">
+          <img src="images/image2.png" alt="Ritu" class="achiever-img">
+          <p><strong>Ritu Mehta</strong><br>2CC Achiever<br>Lucknow</p>
+        </div>
+
+        <!-- Repeat to make loop continuous -->
+        <div class="achiever-card text-center">
+          <img src="images/im3.png" alt="Ravi" class="achiever-img">
+          <p><strong>Ravi Kumar</strong><br>Manager<br>Punjab</p>
+        </div>
+        <div class="achiever-card text-center">
+          <img src="images/im4.png" alt="Neha" class="achiever-img">
+          <p><strong>Ananya</strong><br>4CC Achiever<br>Mumbai</p>
+        </div>
+        <div class="achiever-card text-center">
+          <img src="images/image3.png" alt="Neha" class="achiever-img">
+          <p><strong>Faizal</strong><br>2CC Achiever<br>Gujarat</p>
+        </div>
+        <div class="achiever-card text-center">
+          <img src="images/im1.png" alt="Neha" class="achiever-img">
+          <p><strong>Neha Sharma</strong><br>6CC Achiever<br>Mumbai</p>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="section bg-light" id="contact">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p>You can reach out via WhatsApp or Email.</p>
+      <p>9826281089</p>
+      <div class="contact-icons">
+        <a href="https://wa.me/919305419473?text=Hello%20Forever%20Company%2C%20I%20am%20interested%20in%20your%20products." target="_blank" class="text-success"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        <a href="rsarfarajalam93@gmail.com" class="text-primary"><i class="bi bi-envelope"></i> Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Icon -->
+  <a href="https://wa.me/919305419473?text=Hello%20Forever%20Company%2C%20I%20am%20interested%20in%20your%20products." target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <footer class="text-center p-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 FER Company. All rights reserved.</p>
+      <p>Made  ❤️ by Sarfaraj </p>
+      <div>
+        <a href="#about" class="text-white me-3">About</a>
+        <a href="#products" class="text-white me-3">Products</a>
+        <a href="#gallery" class="text-white me-3">Gallery</a>
+        <a href="#contact" class="text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
